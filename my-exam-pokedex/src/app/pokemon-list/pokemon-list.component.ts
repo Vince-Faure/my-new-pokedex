@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pokemon-list',
   templateUrl: './pokemon-list.component.html',
   styleUrls: ['./pokemon-list.component.css'],
 })
-export class PokemonListComponent {
+export class PokemonListComponent implements OnInit {
   pokemons = [
     {id: 1, name: 'Salamèche'},
     {id: 2, name: 'Limagma'},
@@ -17,4 +17,8 @@ export class PokemonListComponent {
     {id: 8, name: 'Roserade'},
     {id: 9, name: 'Florizarre'},
   ];
+  constructor() { }
+  
+ngOnInit() {
+}
 }
