@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Pokemon from '../types/pokemon.type';
 
 @Component({
   selector: 'app-pokemon-list',
@@ -18,7 +19,7 @@ export class PokemonListComponent implements OnInit {
     {id: 9, name: 'Florizarre'},
   ];
   constructor() { }
-  
+
 ngOnInit() {
 }
 }
