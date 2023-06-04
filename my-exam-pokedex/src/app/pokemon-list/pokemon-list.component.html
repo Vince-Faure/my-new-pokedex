@@ -1,6 +1,6 @@
 
 <ul class="pokemons">
-<li *ngFor="let pokemon of pokemons"  [class.selected]="selectedPokemon == pokemon"  (click)="selectPokemon(pokemon)"><span class="badge">{{pokemon.id}}</span>{{pokemon.name}}</li>
+<li *ngFor="let pokemon of pokemons"  [class.selected]="selectedPokemon == pokemon"  (click)="selectPokemon(pokemon)" (click)="typePokemon(pokemon)"><span class="badge" >{{pokemon.id}}</span>{{pokemon.name}}</li>
 </ul>
 
 <app-pokemon-details *ngIf="selectedPokemon" [pokemon]="selectedPokemon"></app-pokemon-details>

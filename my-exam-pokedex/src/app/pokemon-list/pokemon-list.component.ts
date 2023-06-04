@@ -30,6 +30,21 @@ selectPokemon(pokemon: Pokemon){
   this.selectedPokemon = pokemon;
 }
 
+typePokemon(pokemon: Pokemon){
+
+  this.selectedPokemon = pokemon;
+  if(this.selectedPokemon.type == 'feu'){
+    console.log('feu')
+  }
+  if(this.selectedPokemon.type == 'foudre'){
+    console.log('foudre')
+  }
+  if(this.selectedPokemon.type == 'plante'){
+    console.log('plante')
+  }
+
+}
+
 
 ngOnInit() {
 }
