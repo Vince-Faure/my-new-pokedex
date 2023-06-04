@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Pokemon from '../types/pokemon.type';
+import { TypeofExpr } from '@angular/compiler';
 
 @Component({
   selector: 'app-pokemon-list',
@@ -23,29 +24,41 @@ export class PokemonListComponent implements OnInit {
   ];
 
   selectedPokemon : Pokemon;
+  badgeColor : 'red';
+
 
 constructor() { }
 
 selectPokemon(pokemon: Pokemon){
   this.selectedPokemon = pokemon;
 }
+/*
+typePokemon(){
 
-typePokemon(pokemon: Pokemon){
-
-  this.selectedPokemon = pokemon;
-  if(this.selectedPokemon.type == 'feu'){
-    console.log('feu')
+  for(let i = 0; i < this.pokemons.length; i++){
+   let pokemon = this.pokemons[i];
+  
+  if(pokemon.type = 'feu'){
+    this.badgeColor = 'red';
+   
   }
-  if(this.selectedPokemon.type == 'foudre'){
-    console.log('foudre')
+  if(pokemon.type = 'foudre'){
+    this.badgeColor = 'blue';
+  
   }
-  if(this.selectedPokemon.type == 'plante'){
-    console.log('plante')
-  }
-
+  if(pokemon.type = 'plante'){
+    this.badgeColor = 'green';
+    
+  } 
 }
+
+
+};*/
+
 
 
 ngOnInit() {
 }
+
+
 }
