@@ -1,6 +1,6 @@
 
 <ul class="pokemons">
 
-<li *ngFor="let pokemon of pokemons"><span class="badge">{{pokemon.id}}</span>{{pokemon.name}}</li>
+<li *ngFor="let pokemon of pokemons" (click)="selectPokemon(pokemon)"><span class="badge">{{pokemon.id}}</span>{{pokemon.name}}</li>
 
 </ul>

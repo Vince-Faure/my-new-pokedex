@@ -6,8 +6,11 @@ import Pokemon from '../types/pokemon.type';
   templateUrl: './pokemon-list.component.html',
   styleUrls: ['./pokemon-list.component.css'],
 })
+
+
 export class PokemonListComponent implements OnInit {
-  pokemons = [
+  
+  pokemons: Pokemon[] = [
     {id: 1, name: 'Salamèche'},
     {id: 2, name: 'Limagma'},
     {id: 3, name: 'Malosse'},
@@ -18,7 +21,15 @@ export class PokemonListComponent implements OnInit {
     {id: 8, name: 'Roserade'},
     {id: 9, name: 'Florizarre'},
   ];
-  constructor() { }
+
+  selectedPokemon!: Pokemon;
+
+constructor() { }
+
+selectPokemon(pokemon: Pokemon){
+  this.selectedPokemon = pokemon;
+}
+
 
 ngOnInit() {
 }
