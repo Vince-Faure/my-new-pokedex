@@ -22,7 +22,7 @@ export class PokemonListComponent implements OnInit {
     {id: 9, name: 'Florizarre'},
   ];
 
-  selectedPokemon!: Pokemon;
+  selectedPokemon : Pokemon;
 
 constructor() { }
 

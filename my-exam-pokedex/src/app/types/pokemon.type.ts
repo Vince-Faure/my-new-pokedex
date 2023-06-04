@@ -1,6 +1,6 @@
 export default class Pokemon {
 
-    id!: number;
-    name!: string;
+    id: number;
+    name: string;
 
 }
