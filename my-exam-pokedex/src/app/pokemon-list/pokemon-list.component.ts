@@ -24,7 +24,7 @@ export class PokemonListComponent implements OnInit {
   ];
 
   selectedPokemon : Pokemon;
-  badgeColor : 'red';
+  badgeColor : string;
 
 
 constructor() { }
@@ -32,7 +32,7 @@ constructor() { }
 selectPokemon(pokemon: Pokemon){
   this.selectedPokemon = pokemon;
 }
-/*
+
 typePokemon(){
 
   for(let i = 0; i < this.pokemons.length; i++){
@@ -40,20 +40,20 @@ typePokemon(){
   
   if(pokemon.type = 'feu'){
     this.badgeColor = 'red';
-   
-  }
-  if(pokemon.type = 'foudre'){
+   if(pokemon.type = 'foudre'){
     this.badgeColor = 'blue';
-  
-  }
-  if(pokemon.type = 'plante'){
+    } 
+    if(pokemon.type = 'plante'){
     this.badgeColor = 'green';
     
   } 
+  }
+  
+
 }
 
 
-};*/
+};
 
 
 
